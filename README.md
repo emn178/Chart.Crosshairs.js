@@ -15,7 +15,6 @@ bower install Chart.Crosshairs.js
 ```
 
 ## Usage
-```
 JavaScript
 ```JavaScript
 new Chart(ctx, {
