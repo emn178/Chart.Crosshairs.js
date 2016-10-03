@@ -1,0 +1,12 @@
+{
+  "name": "Chart.Crosshairs.js",
+  "version": "0.1.0",
+  "main": ["src/Chart.Crosshairs.js"],
+  "ignore": [
+    "samples",
+    "tests"
+  ],
+  "dependencies": {
+    "Chart.js": ">= 2.0"
+  }
+}
