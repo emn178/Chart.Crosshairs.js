@@ -10,9 +10,12 @@ Crosshairs plugin for Chart.js.
 
 ## Installation
 You can also install Chart.Crosshairs.js by using Bower.
-```
-bower install Chart.Crosshairs.js
-```
+
+    bower install Chart.Crosshairs.js
+
+Or node.js, you can use this command to install:
+
+    npm install chart.crosshairs.js
 
 ## Usage
 JavaScript

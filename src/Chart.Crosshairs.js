@@ -1,22 +1,22 @@
 /**
  * [Chart.Crosshairs.js]{@link https://github.com/emn178/Chart.Crosshairs.js}
  *
- * @version 0.1.0
+ * @version 0.1.1
  * @author Chen, Yi-Cyuan [emn178@gmail.com]
- * @copyright Chen, Yi-Cyuan 2016
+ * @copyright Chen, Yi-Cyuan 2016-2017
  * @license MIT
  */
 (function () {
   Chart.pluginService.register({
     beforeDraw: function(chartInstance) {
-      if (!chartInstance.tooltipActive || !chartInstance.tooltipActive.length) {
+      if (!chartInstance.tooltip._active || !chartInstance.tooltip._active.length) {
         return;
       }
       if (!chartInstance.options.crosshairs) {
         return;
       }
       var ctx = chartInstance.chart.ctx;
-      var tooltip = chartInstance.tooltipActive[0];
+      var tooltip = chartInstance.tooltip._active[0];
       var vertical = false, horizontal = false;
       if (chartInstance.options.crosshairs.mode == 'horizontal') {
         horizontal = true;
